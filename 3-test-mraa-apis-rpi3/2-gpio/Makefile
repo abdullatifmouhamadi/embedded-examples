@@ -6,7 +6,7 @@ main:main.cpp
 	$(CC) -o main main.cpp $(LIBS)
 
 clean:
-	rm -rf *.o
+	rm -rf *.o main
 
 
 
