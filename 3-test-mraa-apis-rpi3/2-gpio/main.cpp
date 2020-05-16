@@ -18,9 +18,9 @@
 #include "mraa/gpio.hpp"
 
 /* gpio declaration */
-#define GPIO_PIN_1 22
-#define GPIO_PIN_2 23
-#define GPIO_PIN_3 12
+#define GPIO_PIN_1 29
+
+
 
 volatile sig_atomic_t flag = 1;
 
@@ -32,8 +32,6 @@ void sig_handler(int signum) {
 }
 
 
-
-
 int main(void) {
     mraa::Result status;
 
@@ -43,8 +41,6 @@ int main(void) {
     //! [Interesting]
     /* initialize GPIO pin */
     mraa::Gpio gpio_1(GPIO_PIN_1);
-    mraa::Gpio gpio_2(GPIO_PIN_2);
-    mraa::Gpio gpio_3(GPIO_PIN_3);
 
     /* set GPIO to output */
     status = gpio_1.dir(mraa::DIR_OUT);
@@ -53,50 +49,25 @@ int main(void) {
         return EXIT_FAILURE;
     }
 
-    /* set GPIO to output */
-    status = gpio_2.dir(mraa::DIR_OUT);
-    if (status != mraa::SUCCESS) {
-        printError(status);
-        return EXIT_FAILURE;
-    }
-
-    /* toggle both GPIO's */
-
-    int counter = 0;
+    /* toggle both GPIO's */    
     while (flag) {
-        counter++;
 
         status = gpio_1.write(1);
         if (status != mraa::SUCCESS) {
             printError(status);
             return EXIT_FAILURE;
         }
-        status = gpio_2.write(0);
-        if (status != mraa::SUCCESS) {
-            printError(status);
-            return EXIT_FAILURE;
-        }
 
-        usleep(25000);
+        usleep(5000);
 
         status = gpio_1.write(0);
         if (status != mraa::SUCCESS) {
             printError(status);
             return EXIT_FAILURE;
         }
-
-        status = gpio_2.write(1);
-        if (status != mraa::SUCCESS) {
-            printError(status);
-            return EXIT_FAILURE;
-        }
-
-        usleep(50000);
-
-        std::cout << "salut " << counter << std::endl;
+        usleep(2500);
+        //std::cout << "salut " << gpio_1.read() << std::endl;
     }
     //! [Interesting]
     return EXIT_SUCCESS;
 }
-
-
