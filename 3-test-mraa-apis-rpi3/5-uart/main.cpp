@@ -18,7 +18,7 @@
 #include "mraa/uart.hpp"
 
 /* UART port */
-#define UART_PORT 0
+#define UART_PORT 1
 
 const char* dev_path = "/dev/ttyS0";
 
