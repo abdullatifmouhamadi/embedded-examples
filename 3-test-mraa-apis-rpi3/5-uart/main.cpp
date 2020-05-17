@@ -20,7 +20,7 @@
 /* UART port */
 #define UART_PORT 1
 
-const char* dev_path = "/dev/ttyS0";
+const char* dev_path = "/dev/ttyAMA0";
 
 volatile sig_atomic_t flag = 1;
 
@@ -74,6 +74,8 @@ main(void)
         uart->writeStr("Hello Mraa!");
 
         sleep(1);
+
+        std::cout << "salut" << std::endl;
     }
     //! [Interesting]
 
