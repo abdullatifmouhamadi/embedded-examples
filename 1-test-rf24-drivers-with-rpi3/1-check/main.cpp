@@ -13,7 +13,7 @@ using namespace std;
 #define PIN_CE 17
 #define PIN_CSN 0
 
-int main() {
+int main(void) {
 
 	RF24 radio(PIN_CE, PIN_CSN);
 	radio.begin();
