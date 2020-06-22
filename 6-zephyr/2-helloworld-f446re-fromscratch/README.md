@@ -1,4 +1,4 @@
-
+../
 
 ## getting started
 https://docs.zephyrproject.org/latest/getting_started/index.html
