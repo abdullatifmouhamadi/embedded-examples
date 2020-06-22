@@ -14,3 +14,6 @@ west build -b nucleo_f446re samples/hello_world
 west flash
 ```
 
+
+# setup 
+../../../common/scripts/setup-zephyr.sh
