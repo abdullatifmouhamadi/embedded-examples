@@ -1,0 +1,78 @@
+{
+    "configurations": [
+        {
+            "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/include",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/src",
+                "/home/abdullatif/.platformio/packages/framework-zephyr/include",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated",
+                "/home/abdullatif/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f4",
+                "/home/abdullatif/.platformio/packages/framework-zephyr/drivers",
+                "/home/abdullatif/.platformio/packages/framework-zephyr/ext/hal/cmsis/Core/Include",
+                "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/soc",
+                "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/drivers/include",
+                "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/drivers/include/Legacy",
+                "/home/abdullatif/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/include",
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/src",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr/include",
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f4",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr/drivers",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr/ext/hal/cmsis/Core/Include",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/soc",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/drivers/include",
+                    "/home/abdullatif/.platformio/packages/framework-zephyr-hal-stm32/stm32cube/stm32f4xx/drivers/include/Legacy",
+                    "/home/abdullatif/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=40304",
+                "STM32F446xx",
+                "BUILD_VERSION=20200",
+                "CORE_CM4",
+                "HSE_VALUE=8000000",
+                "KERNEL",
+                "STM32F446xx",
+                "USE_FULL_LL_DRIVER",
+                "USE_HAL_DRIVER",
+                "_FORTIFY_SOURCE=2",
+                "__PROGRAM_START",
+                "__ZEPHYR__=1",
+                ""
+            ],
+            "intelliSenseMode": "clang-x64",
+            "cStandard": "c99",
+            "forcedInclude": [
+                "/home/abdullatif/.platformio/packages/framework-zephyr/include/toolchain/zephyr_stdint.h",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated/autoconf.h",
+                ""
+            ],
+            "compilerPath": "/home/abdullatif/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mabi=aapcs",
+                "-march=armv7e-m",
+                "-mcpu=cortex-m4",
+                "-mthumb",
+                "-isystem",
+                "/home/abdullatif/.platformio/packages/framework-zephyr/lib/libc/minimal/include",
+                "-isystem",
+                "/home/abdullatif/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/include",
+                "-isystem",
+                "/home/abdullatif/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
