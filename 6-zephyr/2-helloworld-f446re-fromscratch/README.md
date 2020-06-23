@@ -1,4 +1,3 @@
-../
 
 ## getting started
 https://docs.zephyrproject.org/latest/getting_started/index.html
@@ -19,5 +18,6 @@ west flash
 ../../../common/scripts/setup-zephyr.sh
 cd zephyrproject/zephyr
 west build -p auto -b nucleo_f446re samples/basic/blinky
+west flash
 
 ```

@@ -20,4 +20,7 @@ pio platform show ststm32
 pio platform update 
 
 
+
+pio run -t upload
+
 ```
