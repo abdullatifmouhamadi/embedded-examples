@@ -1,26 +1,27 @@
 # Project init
 
+# pio 
 https://docs.platformio.org/en/latest/core/userguide/project/cmd_init.html
-
-
 ```
-
 pio platform install ststm32
-
-
 platformio project init --board nucleo_f446re --project-option "framework=zephyr" 
 
-```
 
-
-
-# utils
-```
 pio platform show ststm32
 pio platform update 
-
-
-
 pio run -t upload
-
 ```
+
+
+# custom folders
+https://docs.zephyrproject.org/2.2.0/guides/west/repo-tool.html
+```
+./../../common/scripts/setup-zephyr.sh
+west build -p auto -b nucleo_f446re app1
+west build -p auto -b nucleo_f446re app2
+west flash
+```
+
+
+
+

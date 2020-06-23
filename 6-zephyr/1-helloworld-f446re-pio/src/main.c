@@ -12,7 +12,7 @@
 #define LED		DT_ALIAS_LED0_GPIOS_PIN
 
 /* 1000 msec = 1 sec */
-#define SLEEP_TIME	1000
+#define SLEEP_TIME	20
 
 void main(void)
 {

@@ -218,3 +218,5 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# VSCODE
+.vscode/*

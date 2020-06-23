@@ -6,10 +6,10 @@
         {
             "name": "Linux",
             "includePath": [
-                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/include",
-                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/src",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/include",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/src",
                 "/home/abdullatif/.platformio/packages/framework-zephyr/include",
-                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/.pio/build/nucleo_f446re/zephyr/include/generated",
                 "/home/abdullatif/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f4",
                 "/home/abdullatif/.platformio/packages/framework-zephyr/drivers",
                 "/home/abdullatif/.platformio/packages/framework-zephyr/ext/hal/cmsis/Core/Include",
@@ -22,10 +22,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/include",
-                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/src",
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/include",
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/src",
                     "/home/abdullatif/.platformio/packages/framework-zephyr/include",
-                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated",
+                    "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/.pio/build/nucleo_f446re/zephyr/include/generated",
                     "/home/abdullatif/.platformio/packages/framework-zephyr/soc/arm/st_stm32/stm32f4",
                     "/home/abdullatif/.platformio/packages/framework-zephyr/drivers",
                     "/home/abdullatif/.platformio/packages/framework-zephyr/ext/hal/cmsis/Core/Include",
@@ -55,7 +55,7 @@
             "cStandard": "c99",
             "forcedInclude": [
                 "/home/abdullatif/.platformio/packages/framework-zephyr/include/toolchain/zephyr_stdint.h",
-                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re/.pio/build/nucleo_f446re/zephyr/include/generated/autoconf.h",
+                "/home/abdullatif/Developer/embedded/examples/6-zephyr/1-helloworld-f446re-pio/.pio/build/nucleo_f446re/zephyr/include/generated/autoconf.h",
                 ""
             ],
             "compilerPath": "/home/abdullatif/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
