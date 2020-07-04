@@ -1,0 +1,19 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: your-git-server
+      url-base: https://git.example.com/your-company
+  defaults:
+    remote: your-git-server
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: master
+      import: true
+    - name: app1
+      path: ./app1
+    - name: app2
+      path: ./app2
+  self:
+    path: manifest-repo
