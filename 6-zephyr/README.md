@@ -13,13 +13,16 @@ pio run -t upload
 ```
 
 
-# custom folders
+# west project
 https://docs.zephyrproject.org/2.2.0/guides/west/repo-tool.html
 ```
 ./../../common/scripts/setup-zephyr.sh
 west build -p auto -b nucleo_f446re app1
 west build -p auto -b nucleo_f446re app2
 west flash
+
+minicom --device /dev/ttyACM0 --baud 115200
+CTRL+A puis Q % pour quitter
 ```
 
 

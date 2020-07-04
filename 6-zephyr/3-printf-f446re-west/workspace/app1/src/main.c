@@ -8,6 +8,8 @@
 #include <device.h>
 #include <devicetree.h>
 #include <drivers/gpio.h>
+#include <sys/printk.h>
+
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -34,6 +36,7 @@
 
 void main(void)
 {
+
 	struct device *dev;
 	bool led_is_on = true;
 	int ret;
@@ -52,5 +55,9 @@ void main(void)
 		gpio_pin_set(dev, PIN, (int)led_is_on);
 		led_is_on = !led_is_on;
 		k_msleep(SLEEP_TIME_MS);
+
+		printk("Hello World! %s\n", CONFIG_BOARD);
+
+		printk("Num %d\n", (int)led_is_on);
 	}
 }
